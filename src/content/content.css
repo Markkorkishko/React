@@ -1,0 +1,11 @@
+.my-content-sytle{
+    text-align: center;
+    color: black;
+    font-family: Verdana;
+    font-size: 7rem;
+    margin-top: 15%;
+}
+
+body {
+    background-color: gainsboro;
+}

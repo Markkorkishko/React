@@ -1,0 +1,16 @@
+.nav-style{
+    background-color: grey;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 51.5px;
+}
+
+.nav-menu-style{
+    float: left;
+    font-family: Verdana;
+    text-align: center;
+    color: #222222;
+    font-weight: bold;
+
+}

@@ -1,0 +1,28 @@
+.my-footer-style {
+    background-color: #999999;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    float: left;
+    max-height: 75px;
+    margin-left: -8px;
+}
+
+.footer-list-1 {
+    list-style-type: none;
+    font-size: .75rem;
+    margin: 2px;
+}
+
+.footer-list-2 {
+    list-style-type: none;
+    font-size: .75rem;
+    margin: 2px;
+}
+
+
+.my-footer-style a {
+    float: left;
+    padding: 0;
+    margin: 0;
+}

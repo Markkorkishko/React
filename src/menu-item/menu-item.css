@@ -1,0 +1,10 @@
+a {
+    display: block;
+    padding: 16px;
+}
+
+li a:hover {
+    background-color: #222222;
+    color: white;
+    cursor: pointer;
+}
