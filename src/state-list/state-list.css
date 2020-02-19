@@ -1,0 +1,21 @@
+#appBlockID{
+    font-weight: bold;
+    margin-left: 240px;
+    padding: 4px;
+    background-color: #d0d0cb
+
+}
+
+#olStyleID {
+    margin-bottom: 20px;
+
+}
+
+#appCartID {
+    width: 340px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #d0d0cb;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

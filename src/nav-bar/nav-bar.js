@@ -3,15 +3,19 @@ import MenuItem from "../menu-item";
 import './nav-bar.css'
 import Logo from "../logo";
 
-const NavigationBar = () => {
+const NavigationBar = ({menuData}) => {
+
+    const menuItemList = menuData.map((element) => {
+        return (
+            <li className='nav-menu-style'><MenuItem {... element}/></li>
+        )
+        });
+
     return (
         <div>
             <ul className='nav-style'>
                 <li className='nav-menu-style'><Logo isheader={true}/></li>
-                <li className='nav-menu-style'><MenuItem name='HOME'/></li>
-                <li className='nav-menu-style'><MenuItem name='STORE'/></li>
-                <li className='nav-menu-style'><MenuItem name='BLOG'/></li>
-                <li className='nav-menu-style'><MenuItem name='SUPPORT'/></li>
+                {menuItemList}
             </ul>
 
         </div>

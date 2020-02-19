@@ -1,0 +1,28 @@
+form input {
+    width: 30px;
+    margin-left: 4px;
+    margin-right: 3px;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 2px;
+}
+
+form button  {
+    border: none;
+}
+
+form button:hover  {
+    background-color: #222222;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+form div{
+    float: left;
+    width: 200px;
+    border-right: #999999 solid 1px;
+}

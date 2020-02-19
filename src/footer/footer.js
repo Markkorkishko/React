@@ -3,23 +3,57 @@ import './footer.css'
 import FootMenu from "../foot-menu";
 import Logo from "../logo";
 
-const Footer = () =>{
-    return(
-        <div className='my-footer-style'>
-            <a><Logo className='logo-footer-style' isheader={false} /></a>
+const Footer = ({topMenuData, footMenuData, textBar}) => {
 
-            <a><ul className='footer-list-1'>
-                <li><FootMenu name='Contact Us'/></li>
-                <li><FootMenu name='About Us'/></li>
-                <li><FootMenu name='Partners'/></li>
-                <li><FootMenu name='Careers'/></li>
-            </ul></a>
-            <a><ul className='footer-list-2'>
-                <li><FootMenu name='Media'/></li>
-                <li><FootMenu name='Promotions'/></li>
-                <li><FootMenu name='FAQs'/></li>
-                <li><FootMenu name='Join Now'/></li>
-            </ul></a>
+    const FooterMenuOne = topMenuData.map((element) => {
+        return (
+            <li><FootMenu {...element}/></li>
+        );
+    });
+
+    const FootStylePackOne = (element) => {
+        return (
+            <a>
+                <ul className='footer-list-1'>
+                    {element}
+                </ul>
+            </a>
+        );
+    };
+
+    const FooterMenuTwo = footMenuData.map((element) => {
+        return (
+            <li><FootMenu {...element}/></li>
+        );
+    });
+
+    const FootStylePackTwo = (element) => {
+        return (
+            <a>
+                <ul className='footer-list-2'>
+                    {element}
+                </ul>
+            </a>
+        );
+    };
+
+    const TextBar = (text) => {
+        return (
+            <a>
+                <ul className='footer-list-3'>
+                    <li>{text}</li>
+                </ul>
+            </a>
+        );
+    };
+
+    return (
+        <div className='my-footer-style'>
+            <a><Logo className='logo-footer-style' isheader={false}/></a>
+
+            {FootStylePackOne(FooterMenuOne)}
+            {FootStylePackTwo(FooterMenuTwo)}
+            {TextBar(textBar)}
 
         </div>
 

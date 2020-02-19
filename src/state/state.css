@@ -1,0 +1,11 @@
+#stateID {
+    float: left;
+    width: 200px;
+    border-right: #999999 solid 1px;
+}
+
+.stateButtonsID {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
